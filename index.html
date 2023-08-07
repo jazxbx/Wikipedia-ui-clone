@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f1093ccd0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Wikipedia UI Copycat</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-brand">
+        <div>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="wiki-globe">
+          <img src="./img/wikipedia-logo.png" alt="wikipedia-globe" />
+        </div>
+        <div class="logo-group">
+          <img
+            src="./img/wikipedia-wordmark.svg"
+            alt="wikipedia-name"
+            class="wordmark"
+          />
+          <img
+            src="./img/wikipedia-tagline.svg"
+            alt="wikipedia-tag"
+            class="wiki-tag"
+          />
+        </div>
+      </div>
+
+      <form class="header-search">
+        <div class="search-box">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Wikipedia" />
+          </div>
+        </div>
+        <button>Search</button>
+      </form>
+
+      <div class="header-account">
+        <a href="#">Create account</a>
+        <a href="#">Log in</a>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </header>
+
+    <div id="main-container">
+      <nav id="nav-container">
+        <div class="nav-right">
+          <a href="#" class="nav--black">Main Page</a>
+          <a href="#" class="nav--padding">Talk</a>
+        </div>
+        <div class="nav-left">
+          <a href="#" class="nav--black">Read</a>
+          <a href="#" class="nav--padding">View source</a
+          ><!--change to link-->
+          <a href="#" class="nav--padding">View history</a>
+          <a href="#" class="nav--black-toggle nav--padding">Tools</a><i class="fa-solid fa-chevron-down fa-xs"></i>
+        </div>
+      </nav>
+      <div class="banner grey">
+        <h1>Welcome to <span>Wikipedia</span>,</h1>
+        <p class="medium-font">
+          the <span>free encyclopedia</span> that <span>anyone can edit.</span>
+        </p>
+        <p class="small-font"><a href="#" class="link--regular">6,692,817</a> articles in <a href="#" class="link--regular">English</a></p>
+      </div>
+
+      <div id="grid">
+        <div class="grid-left">
+          <section id="featured-article" class="grid-left--top">
+            <header class="section-header">
+              <h2>From today's featured article</h2>
+            </header>
+            <figure class="grid-float--left">
+              <img src="./img/Eratini_Bucht.jpg.webp" alt="Eratini Bucht" />
+              <figcaption>
+                The Greek village of <a href="#">Erateini</a>, where coastal
+                effects of the earthquake was observed.
+              </figcaption>
+            </figure>
+            <p>
+              The
+              <a href="#" class="link--bold">1995 Aigio earthquake</a> struck
+              <a href="#" class="link--bold">Western Greece</a> near the coastal
+              city of <a href="#" class="link--bold">Aigio</a> at 03:15:48 local
+              time (00:15:48 UTC) on 15 June 1995. It measured 6.4–6.5 on the
+              <a href="#" class="link--regular">moment magnitude scale </a>(Mw).
+              The horizontal
+              <a href="#" class="link--regular">peak ground acceleration</a>
+              reached 0.54 g and ground velocity peaked at 52 cm/s (20 in/s),
+              the <a href="#" class="link--regular">strongest ground motion</a>
+              ever recorded in Greece. Fifteen minutes later, a large aftershock
+              caused further damage. Faulting occurred on either the Aigion
+              fault or one offshore. Other faults in the region have the
+              potential to produce earthquakes up to Mw 6.9. The quake caused
+              $660 million of damage. The collapse of buildings left 26 dead and
+              up to 200 injured. Several countries and organizations provided
+              <a href="#" class="link--regular">disaster aid</a>, including
+              search and rescue and refugee assistance, medical supplies,
+              temporary shelter and water treatment equipment. The Greek
+              government issued loans for<a href="#" class="link--regular">
+                Aigio's rebuilding.</a
+              >There was concern over the lack of a warning, as officials had
+              been told that a major earthquake would occur.
+              <a href="index.html" class="link--bold">(Full article...)</a>
+              <div class="section--extra">
+                <ul> Recently Featured:
+                  <li><a href="#" class="link--regular">"My Man"(Tamar Braxton song)</a></li>
+                  <li><a href="#" class="link--regular">Edward Dando</a></li>
+                  <li><a href="#" class="link--regular">Hurricane Hector(2018)</a></li>
+                </ul>
+              </div>
+            </p>
+            <footer class="section--extra">
+              <ul>
+                <li><a href="#" class="link--bold">Archive</a></li>
+                <li><a href="#" class="link--bold">By Email</a></li>
+                <li><a href="#" class="link--bold">More featured articles</a></li>
+                <li><a href="#" class="link--bold">About</a></li>
+              </ul>
+            </footer>
+          </section>
+
+          <section id="dyk" class="grid-left--top">
+            <header class="section-header"><h2>Did you know ...</h2></header>
+            <figure class="grid-float--right">
+              <img
+                src="./img/20.000_especies_de_abejas,_2023_(Estibaliz_Urresola).jpg.webp"
+                alt="Estobaliz Urresola"
+              />
+              <figcaption>Estibaliz Urresola Solaguren</figcaption>
+            </figure>
+              <ul>
+                <li>
+                  ... that <a href="#" class="link--regular link--italic">20,000 Species of Bees</a>, the first feature film by
+                  <a href="#" class="link--bold">Estibaliz Urresola Solaguren</a> (pictured), won numerous awards
+                  at film festivals?
+                </li>
+                <li>
+                  ... that when discussing her album <a href="#" class="link--bold link--italic">Guts</a>,<a href="#" class="link--regular"> Olivia Rodrigo</a> said
+                  she "grew 10 years between the ages of 18 and 20"?
+                </li>
+                <li>
+                  ... that <a href="#" class="link--regular link--italic">Ameles decolor</a> has one of the most complex mating
+                  rituals of any praying mantis? ... that the Duke of
+                  Westminster preferred Bourdon House to Grosvenor House?
+                </li>
+                <li>
+                  ... that former Kuwaiti foreign minister <a href="#" class="link--bold">Ahmad Nasser
+                    Al-Mohammad Al-Sabah</a> interrupted his studies in France to
+                  volunteer during the Iraqi invasion of Kuwait?
+                </li>
+                <li>
+                  ... that almost 40 years into their career, American indie
+                  rock band <a href="#" class="link--regular">Yo La Tengo</a> released their first self-produced
+                  album, This Stupid World, in 2023?
+                </li>
+                <li>
+                  ... that <a href="#" class="link--bold">Ferrial Sofyan</a> was absent at the inauguration of his
+                  successor as deputy speaker of the Jakarta Regional People's
+                  Representative Council?
+                </li>
+                <li>... that <a href="#" class="link--bold">Oklahoma tenderloin</a> is <a href="#" class="link--regular">baloney?</a></li>
+              </ul>
+              <footer class="section--extra">
+                <ul>
+                  <li><a href="#" class="link--bold">Archive</a></li>
+                  <li><a href="#" class="link--bold">Start a new article</a></li>
+                  <li><a href="#" class="link--bold">Nominate an article</a></li>
+                </ul>
+              </footer>
+          </section>
+        </div>
+
+        <div class="grid-right">
+          <section id="news" class="grid-right--top">
+            <header class="section-header"><h2>In the news</h2></header>
+            
+              <figure class="grid-float--right">
+              <img
+                src="./img/Chris_Woakes_2022.jpg.webp"
+                alt="Christ Woakes"
+              />
+              <figcaption>
+                Chris Woakes
+              </figcaption>
+            </figure>
+              <ul>
+                <li>
+                  <a href="#" class="link--regular">In cricket</a>, <a href="#" class="link--bold">the Ashes</a> concludes with Australia retaining the
+                  trophy, drawing the series against <a href="#" class="link--regular">England</a> (<a href="#" class="link--regular link--italic">Compton–Miller
+                    Medal</a> recipient <a href="#" class="link--regular link--italic">Chris Woakes</a> pictured).
+                </li>
+                <li>
+                  In cycling, <a href="#" class="link--regular">Demi Vollering</a> wins the Tour de France Femmes.
+                </li>
+                <li>
+                  <a href="#" class="link--regular">I IS–KP</a> kill more than 50 people in a suicide bombing at a
+                  political rally in <a href="#" class="link--regular">Khar</a>, Pakistan.
+                </li>
+                <li>
+                  Emperor Nero's private theatre is discovered under the
+                  courtyard of <a href="#" class="link--bold">Palazzo Della Rovere</a> in Rome.
+                </li>
+              </ul>
+              <footer class="section--extra">
+                <ul>
+                  <li><a href="#" class="link--bold">Ongoing</a></li>
+                  <li><a href="#" class="link--regular">FIFA Women's World Cup</a></li>
+                  <li><a href="#" class="link--regular">Russian invasion of Ukraine</a></li>
+                  <li><a href="#" class="link--regular">Sudan conflict</a></li>
+                </ul>
+              </footer>
+              <footer class="section--extra">
+                <ul>
+                  <li><a href="#" class="link--bold">Recent deaths:</a></li>
+                  <li><a href="#" class="link--regular">Robbie Shepherd</a></li>
+                  <li><a href="#" class="link--regular"> Angus Cloud</a></li>
+                  <li><a href="#" class="link--regular">Henri Konan</a></li>
+                </ul>
+                <a href="#" class="section--extra link--bold">Nominate an Article</a> 
+              </footer>
+          </section>
+
+          <section id="on-this-day" class="grid-right--top">
+            <header class="section-header"><h2>On this day</h2></header>
+            <figure class="grid-float--right">
+              <img
+                src="./img/180px-Jiddu_Krishnamurti_01.jpg"
+                alt="Jiddu Krishnamurti"
+              />
+              <figcaption>Krishnamurti in the 1920's</figcaption>
+            </figure>
+              <h4><a href="#" class="link--bold">August 3</a></h4>
+              <ul>
+                <li><a href="#" class="link--regular">1057</a> – Pope Stephen IX was crowned as pope.</li>
+                <li><a href="#" class="link--regular">1929</a>
+                 – <a href="#" class="link--regular">Jiddu Krishnamurti</a> (pictured), believed by some
+                  Theosophists to be a likely candidate for the messianic "World
+                  Teacher", dissolved the <a href="#" class="link--bold">Order of the Star</a>, the organisation
+                  established to support him.
+                </li>
+                <li><a href="#" class="link--regular">1940</a>
+                   – <a href="#" class="link--regular">World War II</a>: Italian forces began a conquest of
+                  British Somaliland, capturing the region in 16 days.
+                </li>
+                <li><a href="#" class="link--regular">1977</a>
+                   – <a href="#" class="link--regular">Tandy Corporation</a> announced the <a href="#" class="link--bold">TRS-80</a>, one of the
+                  world's first mass-produced personal computers.
+                </li>
+                <li><a href="#" class="link--regular">2005</a>
+                   – Mauritanian president <a href="#" class="link--regular">Maaouya Ould Sid'Ahmed Taya</a> was
+                  overthrown in a military coup while he attended the funeral of
+                  <a href="#" class="link--bold">King Fahd</a> of Saudi Arabia.
+                </li>
+              </ul>
+              <a href="index.html">(Full article...)</a>
+              <footer class="section--extra">
+                <ul>
+                  <li><a href="#" class="link--bold">Ongoing</a></li>
+                  <li><a href="#" class="link--regular">FIFA Women's World Cup</a></li>
+                  <li><a href="#" class="link--regular">Russian invasion of Ukraine</a></li>
+                  <li><a href="#" class="link--regular">Sudan conflict</a></li>
+                </ul>
+              </footer>
+              <footer class="section--extra">
+                <ul>
+                  <li><a href="#" class="link--bold">Recent deaths:</a></li>
+                  <li><a href="#" class="link--regular">Robbie Shepherd</a></li>
+                  <li><a href="#" class="link--regular"> Angus Cloud</a></li>
+                  <li><a href="#" class="link--regular">Henri Konan</a></li>
+                </ul>
+              </footer>
+           
+          </section>
+        </div>
+
+        <div class="grid-bottom">
+          <section id="featured-picture" class="grid-bottom--container bg-purple">
+            <header class="section-header bg-purple_dark"><h2>Today's featured picture</h2></header>
+            <figure class="grid-bottom--img">
+              <img src="./img/South_Georgia_Island.jpg.webp" />
+              <figcaption>Photograph credit: <a href="#" class="link--regular">European Space Agency</a></figcaption>
+            </figure>
+            <p>
+              <a href="#" class="link--bold">South Georgia</a> is an island in the <a href="#" class="link--regular">South Atlantic Ocean</a> that is part of the British Overseas Territory of South Georgia and the South Sandwich Islands. It lies around 1,400 kilometres (870 mi) east of the <a href="#" class="link--regular">Falkland Islands</a>. Stretching in the east–west direction, South Georgia is around 170 kilometres (106 mi) long and has a maximum width of 35 kilometres (22 mi). The terrain is mountainous, with the central ridge rising to an elevation of 2,935 metres (9,629 ft) at <a href="#" class="link--bold">Mount Paget</a>. The northern coast is indented with numerous bays and fjords, serving as good harbours. This satellite image of South Georgia was taken by the<a href="#" class="link--regular"> European Space Agency</a> 's <a href="#" class="link--regular">Sentinel-2</a> in February 2018.
+            </p>
+            <div class="section--extra">
+              <ul> Recently Featured
+                <li><a href="#" class="link--italic">Viburnum opulus</a></li>
+                <li><a href="#" class="link--regular">Jacque Isnardon</a></li>
+                <li><a href="#" class="link--regular">Sol de Manana</a></li>
+              </ul>
+            </div>
+            <div class="section--extra">
+              <ul> 
+                <li><a href="#" class="link--bold">Archive</a></li>
+                <li><a href="#" class="link--bold">More featured pictures</a></li>
+              </ul>
+            </div>
+          </section>
+          <section id="wiki-other-areas" class="grid-bottom--container bg-grey">
+            <header class="section-header bg-grey_dark"><h2>Other areas of Wikipedia</h2></header> 
+              <ul>
+                <li><a href="#" class="link--bold">Community portal</a>  – The central hub for editors, with resources, links, tasks, and announcements. </li>
+                <li><a href="#" class="link--bold">Village pump</a>  – Forum for discussions about Wikipedia itself, including policies and technical issues. </li>
+                <li><a href="#" class="link--bold">Teahouse</a>  – Ask basic questions about using or editing Wikipedia.</li>
+                <li><a href="#" class="link--bold">Reference desk</a>  – Ask research questions about encyclopedic topics.</li>
+                <li><a href="#" class="link--bold">Content portals</a> – A unique way to navigate the encyclopedia.</li>
+              </ul>
+          </section>
+
+          <section id="sister-projects" class="grid-bottom--container bg-grey">
+            <header class="section-header bg-grey_dark"><h2>Wikipedia's sister projects</h2></header> 
+              <p>Wikipedia is written by volunteer editors and hosted by the <a href="#" class="link--regular">Wikimedia Foundation</a>, a non-profit organization that also hosts a range of other volunteer <a href="#" class="link--regular">projects:</a></p>
+
+              <div class="sister-project-grid" >
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Commons-logo.svg.webp" alt="Commons logo">
+                    <div>
+                      <a href="#" class="link--bold">Commons</a>
+                      <div>Free media repository</div>
+                    </div>
+                  </div>
+                
+                  <div class="sister-project-flex">
+                    <img src="./img/MediaWiki-2020-icon.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">MediaWiki</a>
+                      <div>Wiki software development</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikimedia_Community_Logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Meta-Wiki</a>
+                      <div>Wikimedia project coordination</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikibooks-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikibooks</a>
+                      <div>Free textbooks and manuals</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/94px-Wikidata-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikidata</a>
+                      <div>Free knowledge base</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikinews-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikinews</a>
+                      <div>Free-content new</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikiquote-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikiquote</a>
+                      <div>Collection of quotations</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikisource-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikisource</a>
+                      <div>Free-content library</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikispecies-logo.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikispecies</a>
+                      <div>Directory of species</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/82px-Wikiversity_logo_2017.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikiversity</a>
+                      <div>Free learning tools</div>
+                    </div> 
+                  </div>
+
+                  <div class="sister-project-flex">
+                    <img src="./img/Wikivoyage-Logo-v3-icon.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikivoyage</a>
+                      <div>Free travel guide</div>
+                    </div> 
+                  </div>
+          
+                  <div class="sister-project-flex">
+                    <img src="./img/70px-Wiktionary-logo-v2.svg.webp" alt="">
+                    <div>
+                      <a href="#" class="link--bold">Wikitionary</a>
+                      <div>Dictionary and thesaurus</div>
+                    </div> 
+                  </div>
+              </div>
+          </section>
+
+          <section id="wiki-languages" class="grid-bottom--container bg-grey">
+            <header class="section-header bg-grey_dark"><h2>Wikipedia languages</h2>
+            </header> 
+            <p>This Wikipedia is written in <a href="#" class="link--regular">English</a>. Many other <a href="#" class="link--regular">Wikipedias are available</a>; some of the largest are listed below.</p>
+
+            <div class="language-container">
+              <div class="language-container--style">
+                <div class="lines">
+                  <div class="box-item">
+                    1,000,000+ articles
+                  </div>
+                </div>
+              </div>
+              <div class="language-container--languages">
+                <a href="#" class="link--regular">العربية</a>
+                <a href="#" class="link--regular">Deutsch</a>
+                <a href="#" class="link--regular">Español</a>
+                <a href="#" class="link--regular">Français</a>
+                <a href="#" class="link--regular">Italiano</a>
+                <a href="#" class="link--regular">Nederlands</a>
+                <a href="#" class="link--regular">日本語</a>
+                <a href="#" class="link--regular">Polski</a>
+                <a href="#" class="link--regular">中文</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Tiếng Việt</a>
+              </div>
+
+            </div>
+            <div class="language-container">
+              <div class="language-container--style">
+                <div class="lines">
+                  <div class="box-item">
+                    250,000+ articles
+                  </div>
+                </div>
+              </div>
+              <div class="language-container--languages">
+                <a href="#" class="link--regular">العربية</a>
+                <a href="#" class="link--regular">Deutsch</a>
+                <a href="#" class="link--regular">Español</a>
+                <a href="#" class="link--regular">Français</a>
+                <a href="#" class="link--regular">Italiano</a>
+                <a href="#" class="link--regular">Nederlands</a>
+                <a href="#" class="link--regular">日本語</a>
+                <a href="#" class="link--regular">Polski</a>
+                <a href="#" class="link--regular">中文</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Tiếng Việt</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Tiếng Việt</a>
+                <a href="#" class="link--regular">Українська</a>
+                <a href="#" class="link--regular">Tiếng Việt</a>
+              </div>
+            </div>           
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa-solid fa-language"> </i><span>47 languages </span><i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-text">
+        Text is available under the <a href="#" class="link--regular">Creative Commons Attribution-ShareAlike License 4.0</a>; additional terms may apply. By using this site, you agree to the <a href="#" class="link--regular">Terms of Use and Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="#" class="link--regular">Wikimedia Foundation</a>, Inc., a non-profit organization.
+      </div>
+      <div class="footer-info">
+        <div class="footer-links">
+          <a href="#" class="link--regular">Privacy Policy</a>
+          <a href="#" class="link--regular">About Wikipedia</a>
+          <a href="#" class="link--regular">Disclaimers</a>
+          <a href="#" class="link--regular">Contact Wikipedia</a>
+          <a href="#" class="link--regular">Code of Conduct</a>
+          <a href="#" class="link--regular">Mobile view</a>
+          <a href="#" class="link--regular">Developers</a>
+          <a href="#" class="link--regular">Statistics</a>
+          <a href="#" class="link--regular">Cookie statements</a>
+        </div>
+        <div class="footer-img">
+          <img src="./img/wikimedia-button-2x.png" alt="">
+          <img src="./img/poweredby_mediawiki_176x62.png" alt="">
+          <img src="./img/hack-my-head-logo.png" alt="">
+          <img src="./img/jazz.png" alt="">
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>
